@@ -1,0 +1,33 @@
+﻿@page
+@model Loginform.Pages.IndexModel
+
+<h3>Login Form</h3>
+@Model.msg
+<form method="post" asp-page="Index">
+    <div >
+
+    </div>
+    <table>
+        <tr>
+            <td>
+                Username
+            </td>
+            <td>
+                <input type="text" asp-for="@Model.Username" />
+            </td>
+            <td>
+                Password
+            </td>
+            <td>
+                <input type="password" asp-for="@Model.Password" />
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Login" />
+            </td>
+        </tr>
+    </table>
+
+</form>

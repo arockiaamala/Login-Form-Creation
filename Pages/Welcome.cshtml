@@ -1,0 +1,8 @@
+﻿@page
+@model Loginform.Pages.WelcomeModel
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h1>Welcome @Model.Username</h1>
+<a aspx-page="Index" aspx-page-handler="Logout">Logout</a>
